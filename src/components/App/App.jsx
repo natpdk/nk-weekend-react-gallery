@@ -1,16 +1,19 @@
 
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import ListGallery from "../../GalleryList/GalleryList";
+
 function App() {
     return (
-      <div>
-        <header>
+      <>
+        <header data-testid="app">
           <h1>React Gallery</h1>
         </header>
 
-        <p>The gallery goes here!</p>
-        <img src="images/goat_small.jpg"/>
-        <img src="images/goat_stache.png"/>
-      </div>
-    );
+       <ListGallery />
+   
+       </>);
 }
 
 export default App;

@@ -2,4 +2,90 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: orange;
+}
+
+h1{
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  font-family: fantasy;
+}
+input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus{
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.InputButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container {
+  display: flex; 
+  justify-content: center; 
+  gap: 1rem; 
+}
+
+.galleryList {
+  position: relative; /* Establish positioning context for absolute elements like the button */
+  width: 300px;
+  height: auto; /* Allow height to adjust based on content */
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: lightyellow;
+  border: 2px solid darkorange;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.top-right-button {
+  position: absolute; /* Position relative to the .galleryList */
+  top: 10px;
+  right: 10px;
+  padding: 3px 7px; /* Compact button size */
+  font-size: 12px;
+  border: none;
+  background-color: #ff4d4d; /* Red for delete */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-right-button:hover {
+  background-color: #d93636; /* Darker red on hover */
+}
+
+.galleryContent {
+  margin-top: 40px; /* Push content below the button */
+}
+
+.galleryList img {
+  max-width: 100%; /* Ensure image fits within container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra inline spacing */
+  margin: 10px auto; /* Center the image horizontally and add some spacing */
+}
+
+.galleryList p {
+  border: 1px dotted black;
+  max-width: fit-content;
+  font-size: larger;
+  position: relative;
+  margin: 10px auto; /* Center and add spacing */
+  text-align: center;
 }
